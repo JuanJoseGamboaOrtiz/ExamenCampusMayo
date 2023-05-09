@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/app.js" defer></script>
+    <script src="../js/clientes.js" defer></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+              <a href="../index.html" class="brand-logo">Home</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Clientes</a></li>
+                <li><a href="rutasAereas.html">Rutas Aereas</a></li>
+                <li><a href="flotaAerea.html">Flota Aérea</a></li>
+                <li><a href="compra.html">Compra de etiquetas</a></li>
+                <li><a href="embarque.html">Embarque</a></li>
+                <li><a href="personal.html">Personal</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">assignment</i>Registrar</div>
+          <div class="collapsible-body">
+            <div class="row">
+                <form class="col s12 formulario" >
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate" name="nombre">
+                            <label for="first_name">Nombres</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate" name="apellido">
+                            <label for="last_name">Apellidos</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input   id="documento" type="number" class="validate" name="documento">
+                            <label for="documento">Documento de identidad</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input   id="telefono" type="text" class="validate" name="telefono">
+                            <label for="telefono">Telefono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="fecha" type="date" class="validate" name="fecha">
+                            <label for="fecha">Fecha</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input   id="ciudad" type="text" class="validate" name="ciudad">
+                            <label for="ciudad">Ciudad</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="pais" type="text" class="validate" name="pais">
+                            <label for="pais">Pais</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="correo" type="email" class="validate" name="correo">
+                            <label for="correo">Correo</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn waves-effect waves-light" value="Registrar" data-accion="POST">
+                </form>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">cached</i>Modificar</div>
+          <div class="collapsible-body">
+            <div class="row">
+                <form class="col s12 formulario" id="registro">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate" name="nombre">
+                            <label for="first_name">Nombres</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate" name="apellido">
+                            <label for="last_name">Apellidos</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input   id="documento" type="number" class="validate" name="documento">
+                            <label for="documento">Documento de identidad</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input   id="telefono" type="text" class="validate" name="telefono">
+                            <label for="telefono">Telefono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input  id="fecha" type="date" class="validate" name="fecha">
+                            <label for="fecha">Fecha</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input   id="ciudad" type="text" class="validate" name="ciudad">
+                            <label for="ciudad">Ciudad</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="pais" type="text" class="validate" name="pais">
+                            <label for="pais">Pais</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="correo" type="email" class="validate" name="correo">
+                            <label for="correo">Correo</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn waves-effect waves-light" value="Actualizar" data-accion="PUT">
+                </form>
+            </div>
+        </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">announcement</i>Listar</div>
+          <div class="collapsible-body">
+            <form class="col s12 formulario">
+                <input type="submit" class="btn waves-effect waves-light" value="Listar" data-accion="GET">
+                <button class="borrar btn waves-effect waves-light">Borrar</button>
+            </form>
+            <div class="clientes" >
+                
+            </div>
+          </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">delete</i>Eliminar</div>
+            <div class="collapsible-body">
+                <form class="col s12 formulario">
+                    <p>Eliminar por documento de identidad</p>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="documento" type="number" class="validate" name="documento">
+                            <label for="documento">Documento de identidad</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn waves-effect waves-light" value="Eliminar" data-accion="DELETE">
+                </form>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">search</i>Buscar</div>
+            <div class="collapsible-body">
+              <div class="row">
+                  <form class="col s12 formulario" id="registro">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="apellido" type="text" class="validate" name="apellido">
+                            <label for="apellido">Apellidos</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="nombre" type="text" class="validate" name="nombre">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="documento" type="number" class="validate" name="documento">
+                            <label for="documento">Documento de identidad</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn waves-effect waves-light" value="Buscar" data-accion="SEARCH">
+                    <button class="borrar2 btn waves-effect waves-light">Borrar</button>
+                  </form>
+              </div>
+              <div class="cliente">
+
+              </div>
+            </div>
+          </li>
+      </ul>
+</body>
+</html>

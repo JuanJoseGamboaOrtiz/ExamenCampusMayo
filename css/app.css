@@ -1,0 +1,110 @@
+.body{
+    background-image: url(../img/415227-PD8L47-914.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.personal{
+    background-image: url(../img/Mobile-login-Cristina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.index{
+    height: 100vh;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,110400+100 */
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(17,4,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(17,4,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(17,4,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#110400',GradientType=0 ); /* IE6-9 */
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.flota{
+    background-image: url(../img/v660-mon-04-travelbadge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contenedor{
+    width: 100%;
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-info{
+    width: 500px;
+    padding: 30px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor-flota{
+    margin-top: 200px;
+    width: 1200px !important;
+    background-color: transparent !important;
+}
+
+.contenedor-flota .tabs{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tabs .tab{
+    margin-left: 0 !important;
+}
+
+.ingresar{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.estilomodal{
+    width:35%;
+    height: 600px;
+}
+
+.fotos{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    display: flex;
+}
+
+.embarque{
+    background-image: url(../img/hombre-cola-recibiendo-pasaporte-tarjeta-embarque.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.info-pasajero{
+    color: white;
+}

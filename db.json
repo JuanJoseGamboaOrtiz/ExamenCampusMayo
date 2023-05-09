@@ -1,0 +1,73 @@
+{
+  "clientes": [
+    {
+      "nombre": "Antonio",
+      "apellido": "Alvarez",
+      "id": 1096252652,
+      "telefono": "3133156287",
+      "fecha": "2018-06-06",
+      "ciudad": "Barrancabermeja",
+      "pais": "Colombia",
+      "correo": "correo@correo.com",
+      "documento": 1096252652
+    },
+    {
+      "nombre": "Juan JOse",
+      "apellido": "Gamboa Ortiz",
+      "correo": "correo@correo.com",
+      "documento": "1096252738",
+      "id": 1096252738
+    }
+  ],
+  "rutasAereas": [
+    {
+      "ruta": "Ruta1",
+      "ciudado": "Bucaramanga",
+      "ciudadd": "Barrancabermeja",
+      "millas": "60",
+      "valormilla": "1000",
+      "id": 1
+    },
+    {
+      "ruta": "Ruta2",
+      "ciudado": "Barrancabermeja",
+      "ciudadd": "Bucaramanga",
+      "millas": "60",
+      "valormilla": "1000",
+      "id": 2
+    },
+    {
+      "ruta": "Ruta3",
+      "ciudado": "Santa Marta",
+      "ciudadd": "Bogota",
+      "millas": "200",
+      "valormilla": "10000",
+      "id": 3
+    }
+  ],
+  "flotaAerea": [
+    {
+      "aeronave": "11E4A52",
+      "cantPasajeros": "60",
+      "fechaCompra": "2023-05-03",
+      "valCompra": "1000000",
+      "matricula": "ERJ123",
+      "id": 1
+    }
+  ],
+  "personal": [],
+  "ticketes": [
+    {
+      "nombre": "Juan JOse",
+      "apellido": "Gamboa Ortiz",
+      "documento": "1096252738",
+      "ciudado": "Bucaramanga",
+      "ciudadd": "Barrancabermeja",
+      "id": 1096252738,
+      "correo": "correo@correo.com"
+    }
+  ],
+  "embarque":[
+    
+  ]
+}

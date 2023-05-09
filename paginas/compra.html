@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/compra.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <title>Compra de etiquetas</title>
+</head>
+<body>
+    <dialog id="favDialog" class="estilomodal">
+        <div class="info-pago">
+
+        </div>
+          <div>
+            <button id="cancel" type="reset">Cerrar</button>
+          </div>
+      </dialog>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+              <a href="../index.html" class="brand-logo">Home</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="rutasAereas.html">Rutas Aereas</a></li>
+                <li><a href="flotaAerea.html">Flota aérea</a></li>
+                <li><a href="compra.html">Compra de etiquetas</a></li>
+                <li><a href="embarque.html">Embarque</a></li>
+                <li><a href="personal.html">Personal</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h1>Compra de tiquetes</h1>
+                <form class="col s12 formulario" id="compra">
+                  <div class="row">
+                      <div class="input-field col s6 ">
+                          <input id="documento" type="number" class="validate" name="documento">
+                          <label for="documento" class="black-text">Documento de identidad</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <input id="nombre" type="text" class="validate" name="nombre">
+                          <label for="nombre" class="black-text">Nombre</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s6 ">
+                          <input id="apellido" type="text" class="validate" name="apellido">
+                          <label for="apellido" class="black-text">Apellido</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <select name="ruta" id="ruta" class="browser-default">
+                            <option value="" disabled selected>Escoge tu ruta</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <input id="correo" type="email" class="validate" name="correo">
+                        <label for="correo" class="black-text">Correo</label>
+                    </div>
+                </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                    <input type="submit" class="btn waves-effect waves-light "   value="Comprar tiquete" data-accion="COMPRA">
+                    </div>
+                    <div class="input-field col s6">
+                      <input type="submit" class="btn waves-effect waves-light "   value="Registrarse" data-accion="REGISTRO">
+                      </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

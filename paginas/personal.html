@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/app.js" defer></script>
+    <script src="../js/personal.js" defer></script>
+    <title>Personal</title>
+</head>
+<body class="personal">
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+              <a href="../index.html" class="brand-logo">Home</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="rutasAereas.html">Rutas Aereas</a></li>
+                <li><a href="flotaAerea.html">Flota aérea</a></li>
+                <li><a href="compra.html">Compra de etiquetas</a></li>
+                <li><a href="embarque.html">Embarque</a></li>
+                <li><a href="personal.html">Personal</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="row contenedor-flota">
+            <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3"><a href="#test1">Registrar</a></li>
+                <li class="tab col s3"><a class="active" href="#test2">Eliminar</a></li>
+            </ul>
+            </div>
+            <div id="test1" class="col s12 ">
+                <div class="ingresar">
+                    <div class="contenedor-info ">
+                        <div class="row">
+                            <form class="col s12 formulario" id="registropersonal">
+                              <div class="row">
+                                  <div class="input-field col s6 ">
+                                      <input id="documento" type="text" class="validate" name="documento">
+                                      <label for="documento" class="black-text">Número de documento</label>
+                                  </div>
+                                  <div class="input-field col s6">
+                                      <input id="nombre" type="text" class="validate" name="nombre">
+                                      <label for="nombre" class="black-text">Nombre</label>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="input-field col s6 ">
+                                      <input id="apellido" type="text" class="validate" name="apellido">
+                                      <label for="apellido" class="black-text">Apellidos</label>
+                                  </div>
+                                  <div class="input-field col s6">
+                                    <input id="correo" type="email" class="validate" name="correo">
+                                    <label for="correo" class="black-text">E-mail</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="celular" type="number" class="validate" name="celular">
+                                    <label for="celular" class="black-text">Nro de Celular</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <select name="profesion">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="Piloto">Piloto</option>
+                                        <option value="Copiloto">Copiloto</option>
+                                        <option value="Asistente de cabina">Asistente de cabina</option>
+                                        <option value="Asistente de counter">Asistente de counter</option>
+                                        <option value="Especialista en mecánica aerea">Especialista en mecánica aerea</option>
+                                      </select>
+                                    <label for="profesion" class="black-text">Profesión</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                <input type="submit" class="btn waves-effect waves-light" value="Registrar" >
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="test2" class="col s12 eliminar">
+                <div class="ingresar">
+                    <div class="contenedor-info ">
+                        <div class="row">
+                            <form class="col s12 formulario" id="eliminarpersonal">
+                              <div class="row">
+                                  <div class="input-field col s12 ">
+                                      <input id="documento" type="text" class="validate" name="documento">
+                                      <label for="documento" class="black-text">Número de documento</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                    <input type="submit" class="btn waves-effect waves-light" value="Eliminar" >
+                                  </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

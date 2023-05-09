@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/flota.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="flota">
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+              <a href="../index.html" class="brand-logo">Home</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="rutasAereas.html">Rutas Aereas</a></li>
+                <li><a href="flotaAerea.html">Flota aérea</a></li>
+                <li><a href="compra.html">Compra de etiquetas</a></li>
+                <li><a href="embarque.html">Embarque</a></li>
+                <li><a href="personal.html">Personal</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <div class="contenedor-info">
+            <div class="row">
+                <form class="col s12 formulario" id="registroflota">
+                  <div class="row">
+                      <div class="input-field col s6 ">
+                          <input id="aeronave" type="text" class="validate" name="aeronave">
+                          <label for="aeronave" class="black-text">Número aeronave</label>
+                      </div>
+                      <div class="input-field col s6">
+                          <input id="cantPasajeros" type="number" class="validate" name="cantPasajeros">
+                          <label for="cantPasajeros" class="black-text">Cantidad pasajeros</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s6 ">
+                          <input id="fechaCompra" type="date" class="validate" name="fechaCompra">
+                          <label for="fechaCompra" class="black-text">Fecha de compra</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="valCompra" type="number" class="validate" name="valCompra">
+                        <label for="valCompra" class="black-text">Valor de compra</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <input id="matricula" type="text" class="validate" name="matricula">
+                        <label for="matricula" class="black-text">Número matricula</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                    <input type="submit" class="btn waves-effect waves-light" value="Buscar" data-accion="SEARCH">
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

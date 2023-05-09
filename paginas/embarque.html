@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/embarque.js" defer></script>
+    <title>Embarque</title>
+</head>
+<body class="embarque">
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+              <a href="../index.html" class="brand-logo">Home</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="#">Rutas Aereas</a></li>
+                <li><a href="flotaAerea.html">Flota aérea</a></li>
+                <li><a href="compra.html">Compra de etiquetas</a></li>
+                <li><a href="embarque.html">Embarque</a></li>
+                <li><a href="personal.html">Personal</a></li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="titulo">
+        <h1>Embarque</h1>
+    </div>
+    <div class="contenedor">
+        <div class="contenedor-info">
+            <div class="row">
+                <form class="col s12 formulario" id="embarque">
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <input id="documento" type="text" class="validate" name="documento">
+                          <label for="documento" class="black-text">Número de Documento</label>
+                      </div>
+                  </div>
+                  <div class="col s12">
+                    <input type="submit" class="btn waves-effect waves-light" value="Buscar"">
+                  </div>
+                </form>
+            </div>
+            <div class="info-pasajero">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

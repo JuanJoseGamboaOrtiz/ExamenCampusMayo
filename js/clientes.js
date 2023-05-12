@@ -19,10 +19,11 @@ const postUser=async (data)=>{
 }
 
 const putUser= async (data)=>{
-    data.id=data.documento;
+    const {documento}=data;
+    data.id=documento;
     config.method="PUT";
-    config.body=data;
-    (await fetch(`http://localhost:3001/clientes/${data.documento}`,config));
+    config.body=JSON.stringify(data);
+    (await fetch(`http://localhost:3001/clientes/${documento}`,config));
     alert("Usuario Actualizado");
 }
 

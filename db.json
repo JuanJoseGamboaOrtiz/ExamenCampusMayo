@@ -9,14 +9,32 @@
       "ciudad": "Barrancabermeja",
       "pais": "Colombia",
       "correo": "correo@correo.com",
-      "documento": 1096252652
+      "documento": 1096252652,
+      "puntos": 1
     },
     {
-      "nombre": "Juan JOse",
+      "nombre": "DIego Andres",
+      "apellido": "Cristancho Peñuela",
+      "documento": "1096251737",
+      "telefono": "3111111111",
+      "fecha": "1999-05-21",
+      "ciudad": "Bogota",
+      "pais": "Colombia",
+      "correo": "correo2@correo.com",
+      "id": 1096252739,
+      "puntos": 0
+    },
+    {
+      "nombre": "Juan José ",
       "apellido": "Gamboa Ortiz",
-      "correo": "correo@correo.com",
-      "documento": "1096252738",
-      "id": 1096252738
+      "documento": "1096252740",
+      "telefono": "3131544121",
+      "fecha": "22222-02-22",
+      "ciudad": "Medellin",
+      "pais": "Colombia",
+      "correo": "Correo3@correo.com",
+      "id": 1096252740,
+      "puntos": 0
     }
   ],
   "rutasAereas": [
@@ -43,6 +61,22 @@
       "millas": "200",
       "valormilla": "10000",
       "id": 3
+    },
+    {
+      "ruta": "Ruta4",
+      "ciudado": "Médellin",
+      "ciudadd": "Santa Marta",
+      "millas": "400",
+      "valormilla": "3000",
+      "id": 4
+    },
+    {
+      "ruta": "Ruta5",
+      "ciudado": "Bucaramanga",
+      "ciudadd": "Popayan",
+      "millas": "500",
+      "valormilla": "1000",
+      "id": 5
     }
   ],
   "flotaAerea": [
@@ -53,21 +87,27 @@
       "valCompra": "1000000",
       "matricula": "ERJ123",
       "id": 1
+    },
+    {
+      "aeronave": "11E51E4E1",
+      "cantPasajeros": "60",
+      "fechaCompra": "0022-02-12",
+      "valCompra": "2551515",
+      "matricula": "12FD1F2D5F1",
+      "id": 2
     }
   ],
   "personal": [],
   "ticketes": [
     {
-      "nombre": "Juan JOse",
-      "apellido": "Gamboa Ortiz",
-      "documento": "1096252738",
-      "ciudado": "Bucaramanga",
-      "ciudadd": "Barrancabermeja",
-      "id": 1096252738,
+      "nombre": "Antonio",
+      "apellido": "Alvarez",
+      "documento": 1096252652,
+      "ciudado": "Barrancabermeja",
+      "ciudadd": "Bucaramanga",
+      "id": 1,
       "correo": "correo@correo.com"
     }
   ],
-  "embarque":[
-    
-  ]
+  "embarque": []
 }

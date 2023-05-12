@@ -16,7 +16,6 @@ const postUser=async (data)=>{
     config.method="POST";
     config.body=JSON.stringify(data);
     (await fetch("http://localhost:3001/ticketes",config));
-    alert("Vuelo Agregado");
 }
 
 const postUser2= async(data)=>{
@@ -30,6 +29,16 @@ const postUser2= async(data)=>{
     })
     data = await ((await fetch("http://localhost:3001/clientes",config)).json());
     
+}
+
+const agregarPuntos= async (usuario)=>{
+    let puntosusuario=usuario.puntos;
+    usuario.puntos=puntosusuario+1;
+    config.method="PUT";
+    config.body=JSON.stringify(usuario);
+    (await fetch(`http://localhost:3001/clientes/${usuario.documento}`,config));
+    alert("se modificaron los puntos");
+
 }
 
 //LLENAR LOS VALORES DE LOS SELECTS DINAMICAMENTE
@@ -118,6 +127,7 @@ async function  compraTiquete(data){
             "correo":usuario[0].correo
         }
         postUser(vuelo);
+        agregarPuntos(usuario[0]);
         dialog.showModal();
     }else{
         alert("Usuario no se encuetra registrado, ingrese su documento,nombre,apellido y correo y luego de en clcik en registrarse para poder hacer la compra");

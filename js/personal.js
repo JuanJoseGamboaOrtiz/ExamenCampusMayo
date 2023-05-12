@@ -20,7 +20,6 @@ const deleteUser= async (data)=>{
     config.method="DELETE";
     delete config.body;
     (await fetch(`http://localhost:3001/personal/${documento}`,config));
-    alert("Usuario Eliminado")
 }
 
 form.addEventListener('submit',(e)=>{

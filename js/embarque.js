@@ -22,7 +22,7 @@ const buscarUser=async (data)=>{
             <p><span class="info">Cedula: </span>${data[0].documento}</p>
             <p><span class="info">Apellidos: </span>${data[0].apellido}</p>
             <p><span class="info">Correo: </span>${data[0].correo}</p>
-            <p><span class="info">Ciudad origin:</span> ${data[0].ciudado}</p>
+            <p><span class="info">Ciudad origen:</span> ${data[0].ciudado}</p>
             <p><span class="info">Ciudad destino:</span> ${data[0].ciudadd}</p>
         </div>
         </div>
